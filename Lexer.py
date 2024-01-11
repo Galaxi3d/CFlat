@@ -6,6 +6,7 @@ class Lexer:
         self.code = code
         self.variables = {}
         self.IsInFunction = False
+        self.HasLocalVariables = False
         self.FunctionName = ''
         self.tokens = {}
         self.LocalVariables = {}
@@ -38,7 +39,9 @@ class Lexer:
                 line.pop(0)
                 line.pop(0)
                 if self.IsInFunction:
-                    self.LocalVariables.update({self.FunctionName: {}})
+                    if not self.HasLocalVariables:
+                        self.LocalVariables.update({self.FunctionName: {}})
+                        self.HasLocalVariables = True
                     self.LocalVariables[self.FunctionName].update({Key: self.checkEquation(line, None)})
                 else:
                     self.variables.update({Key: self.checkEquation(line, None)})
@@ -49,6 +52,7 @@ class Lexer:
             elif line == "end":  # End Of Function
                 self.IsInFunction = False
                 self.FunctionName = ''
+                self.HasLocalVariables = False
             elif line[0] == "@" and line[1:] in self.tokens:  # Function Called
                 func = line[1:]
                 for Token in self.tokens[func]:
@@ -63,10 +67,13 @@ class Lexer:
                 condition = ''
                 for item in line:
                     if item == 'and' or item == ":":
+                        print(item)
                         conditions.append(condition)
                         condition = ''
                     else:
                         condition += item
+                print(conditions)
+                print(condition)
 
     def checkEquation(self, line, Local):
         IsEquation = False
