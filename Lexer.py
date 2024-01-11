@@ -67,13 +67,10 @@ class Lexer:
                 condition = ''
                 for item in line:
                     if item == 'and' or item == ":":
-                        print(item)
                         conditions.append(condition)
                         condition = ''
                     else:
                         condition += item
-                print(conditions)
-                print(condition)
 
     def checkEquation(self, line, Local):
         IsEquation = False
