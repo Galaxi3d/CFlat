@@ -3,7 +3,7 @@
 
 import Lexer
 
-FILE_NAME = 'thing.txt'
+FILE_NAME = 
 file = open(FILE_NAME, 'r')
 text = file.read().splitlines()
 Lexer.Lexer(text)
