@@ -1,15 +1,3 @@
-a = 5
-function Foo (a,b,c)
-Output(a * b / c);
-end
-
-function Bar
-Output(The Program Is Shutting Down :O);
-Stop();
-end
-
-@Foo (2,1,5)
-@Bar
 
 
 
