@@ -1,5 +1,6 @@
 import os
 
+
 class Methods:
     def __init__(self, method, parameters, ErrorLine):
         self.methods = {
