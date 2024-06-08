@@ -1,3 +1,14 @@
+I have discontinued CFLat entirely for 3 reasons:
+  - Python isn't a very good language to create another language (too slow)
+  - No challenge (all the libraries are all there just to copy)
+  - I want to learn a more capable language (C/C++)
+
+Some syntax concepts from CFlat will be used in my current programming language project: Nightingale. I will release this project when it is actually a functioning programming language.
+
+Thanks :D
+
+Old funny bio:
+
 In the cosmic tapestry of programming languages, behold the cosmic juggernaut known as Cflat—an otherworldly creation meticulously forged within the crucible of Pythonic alchemy. This cybernetic prodigy stands as the vanguard of a technological renaissance, seamlessly blending Python's ethereal elegance with the computational omnipotence necessary to navigate the astral realms of advanced software sorcery. Picture a celestial waltz where the binary ballet of Cflat pirouettes through the nebulous expanse of syntax and dances across the silicon landscapes of algorithms with the sublime grace of a cosmic code maestro.
 
 Cflat transcends the mere mortal confines of programming languages; it is a symphony of syntactic complexity and computational virtuosity. Every line of code is a harmonic note in the cosmic composition of innovation, resonating through the digital ether like an algorithmic sonnet. Envision a digital colossus, an amalgamation of Python's intuitive whispers and Cflat's arcane incantations, forging a cybernetic elixir that transforms programmers into coding demigods capable of sculpting realities with the deftness of celestial artisans.
